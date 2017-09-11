@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image-Pal-Canvas Demo</title>
+
+    <style>
+      .color {
+        float: left;
+        font-size: 14px;
+        font-family: monospace;
+        font-weight: bold;
+        text-align: center;
+        padding: 20px;
+        text-shadow: 1px 1px 1px #ccc;
+        box-shadow: 2px 2px 7px #222;
+      }
+
+      #rgbColors, #hsluvColors {
+        width:100%;
+        height:120px;
+      }
+
+      #options {
+        font-family: monospace;
+        font-size: 18px;
+      }
+
+      #options > input {
+        width: 50px;
+      }
+
+      #uploadBtn {
+        padding: 20px 0;
+        font-size:32px;
+      }
+
+      #img {
+        max-height: 720px;
+        padding:20px;
+      }
+
+      h5 {
+        clear: both;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="options">
+      <h3>Options:</h3>
+
+      <span for="width">Width:</span> <input id="width" value="100">
+      <span for="height">Height:</span> <input id="height" value="">
+      <span for="maxColors">maxColors:</span> <input id="maxColors" value="10">
+      <span for="minDensity">minDensity:</span> <input id="minDensity" value="0.005">
+      <!--<span for="maxDensity">maxDensity:</span> <input id="maxDensity" value="">-->
+      <span for="cubicCells">cubicCells:</span> <input id="cubicCells" value="4">
+      <span for="mean">mean:</span> <input id="mean" type="checkbox" value="1" checked="true">
+      <span for="order">order:</span>
+      <select id="order">
+        <option value="distance" checked="true">Distance</option>
+        <option value="density">Density</option>
+      </select>
+      
+      <input type="button" id="apply" value="Apply" />
+    </div>
+
+    <input id="uploadBtn" type="file" value="Select File" /><br />
+
+    <img id="img" /><br />
+    
+    <h3>RGB Palette:</h3>
+    <div id="rgbColors">
+    </div>
+
+    <h3>HSLuv Palette:</h3>
+    <div id="hsluvColors">
+    </div>
+  </body>
+  <script src="../dist/image-pal-canvas-rgb.js"></script>
+  <script src="../dist/image-pal-canvas-hsluv.js"></script>
+  <script src="./index.es5.js"></script>
+</html>

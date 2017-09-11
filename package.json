@@ -1,0 +1,42 @@
+{
+  "name": "image-pal-canvas",
+  "version": "1.0.0",
+  "description": "A browser based `image-pal` implementation that leverages `Image` and `Canvas` for fast palette retrieval",
+  "main": "lib/rgb.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "demo": "webpack --config ./webpack/config-demo.js",
+    "dist": "webpack --config ./webpack/config-prod.js && webpack --config ./webpack/config-dev.js",
+    "prepublish": "npm run dist && npm run demo",
+    "test": "echo \"No tests, yet\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asilvas/image-pal-canvas.git"
+  },
+  "keywords": [
+    "image-palette",
+    "image-canvas",
+    "canvas-palette",
+    "image-colors"
+  ],
+  "author": "Aaron Silvas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/asilvas/image-pal-canvas/issues"
+  },
+  "homepage": "https://github.com/asilvas/image-pal-canvas#readme",
+  "dependencies": {
+    "image-pal": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "webpack": "^3.5.5"
+  }
+}
