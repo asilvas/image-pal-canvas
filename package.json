@@ -1,6 +1,6 @@
 {
   "name": "image-pal-canvas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A browser based `image-pal` implementation that leverages `Image` and `Canvas` for fast palette retrieval",
   "main": "lib/rgb.js",
   "directories": {
@@ -29,7 +29,7 @@
   },
   "homepage": "https://github.com/asilvas/image-pal-canvas#readme",
   "dependencies": {
-    "image-pal": "^1.0.0"
+    "image-pal": "^1.1.3"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
