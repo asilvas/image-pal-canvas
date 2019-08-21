@@ -328,7 +328,7 @@ module.exports = function (imagePal, _ref, cb) {
   img.addEventListener('error', imgOnError, false);
 
   if (srcUrl) {
-    img.setAttr(srcUrl);
+    img.src = srcUrl;
   }
 
   var inputEvt = void 0;
