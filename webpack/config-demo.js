@@ -1,6 +1,7 @@
 const path = require('path');
 
 module.exports = {
+  mode: 'development',
   entry: './demo/index.js',
   output: {
     filename: 'index.es5.js',
@@ -12,10 +13,10 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
-          loader: 'babel-loader',
+          loader: '@babel/preset-env',
           options: {
             presets: ['env'],
-            plugins: [require('babel-plugin-transform-object-rest-spread')]
+            plugins: [require('@babel/plugin-proposal-object-rest-spread')]
           }
         }
       }
