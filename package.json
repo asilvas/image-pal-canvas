@@ -1,6 +1,6 @@
 {
   "name": "image-pal-canvas",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "A browser based `image-pal` implementation that leverages `Image` and `Canvas` for fast palette retrieval",
   "main": "lib/rgb.js",
   "directories": {

@@ -13,9 +13,9 @@ module.exports = {
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
-          loader: '@babel/preset-env',
+          loader: 'babel-loader',
           options: {
-            presets: ['env'],
+            presets: ['@babel/preset-env'],
             plugins: [require('@babel/plugin-proposal-object-rest-spread')]
           }
         }
