@@ -164,6 +164,7 @@ module.exports = function (imagePal, _ref, cb) {
   img.addEventListener('error', imgOnError, false);
 
   if (srcUrl) {
+    img.crossOrigin = "Anonymous";
     img.src = srcUrl;
   }
 
